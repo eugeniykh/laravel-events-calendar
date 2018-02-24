@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 
+// Imports
+
 import BootstrapDatepicker from 'bootstrap-datepicker'
 import Fullcalendar from 'fullcalendar'
 

@@ -11,6 +11,10 @@
 |
 */
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 // Main events view
 
 Route::get('/', ['uses' => 'IndexController@index', 'as' => 'index']);

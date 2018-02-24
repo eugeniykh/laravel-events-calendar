@@ -7,3 +7,5 @@ How to install?
 3) php artisan key:generate
 4) php artisan migrate
 5) npm run production
+
+Demo Live: https://events-calendar-daxx.herokuapp.com/

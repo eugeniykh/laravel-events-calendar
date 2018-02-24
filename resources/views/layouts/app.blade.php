@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Calendar Events') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css', env('REDIRECT_HTTPS')) }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -54,6 +54,6 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js', env('REDIRECT_HTTPS')) }}"></script>
 </body>
 </html>

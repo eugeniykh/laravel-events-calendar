@@ -11,7 +11,6 @@
 |
 */
 
-
 // Main events view
 
 Route::get('/', ['uses' => 'IndexController@index', 'as' => 'index']);

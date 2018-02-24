@@ -12,6 +12,7 @@ import moment from 'moment'
 import Fullcalendar from 'fullcalendar'
 
 window.Vue = require('vue');
+window.VueResource = require('vue-resource');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

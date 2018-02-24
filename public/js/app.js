@@ -27565,7 +27565,7 @@ return zhTw;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(132);
-module.exports = __webpack_require__(161);
+module.exports = __webpack_require__(163);
 
 
 /***/ }),
@@ -27594,6 +27594,7 @@ __webpack_require__(133);
 
 
 window.Vue = __webpack_require__(158);
+window.VueResource = __webpack_require__(161);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27651,15 +27652,6 @@ try {
 
   __webpack_require__(135);
 } catch (e) {}
-
-/**
- * Vue is a modern JavaScript library for building interactive web interfaces
- * using reactive data binding and reusable components. Vue's API is clean
- * and simple, leaving you to focus on building your next great project.
- */
-
-window.Vue = __webpack_require__(158);
-window.VueResource = __webpack_require__(172);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -76414,22 +76406,6 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 /* 161 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77518,7 +77494,7 @@ function xhrClient (request) {
 
 function nodeClient (request) {
 
-    var client = __webpack_require__(173);
+    var client = __webpack_require__(162);
 
     return new PromiseObj(function (resolve) {
 
@@ -77986,10 +77962,16 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 173 */
+/* 162 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

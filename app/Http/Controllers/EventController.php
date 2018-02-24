@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Http\Requests\EventRequest;
+use App\Http\Requests\EventRequestStore;
 use App\Repositories\Events;
+use Illuminate\Validation\Rule;
 
 class EventController extends Controller
 {
@@ -40,7 +42,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(EventRequest $request) {
+    public function store(EventRequestStore $request) {
         $event = new Event;
         $event->fill($request->all());
         if ($event->save()) {
@@ -73,6 +75,9 @@ class EventController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(EventRequest $request, Event $event) {
+        $this->validate($request, [
+            'date' => Rule::unique('event', 'date')->ignore($event->id)
+        ]);
         $event->fill($request->all());
         if ($event->save()) {
             return redirect()->action('IndexController@index')->with('status', 'Event updated!');

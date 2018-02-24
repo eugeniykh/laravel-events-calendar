@@ -25,7 +25,7 @@ class EventRequestStore extends FormRequest
     {
         return [
             'title'      => 'required|string|max:255',
-            'date'     => 'required|date|unique:event,date'
+            'date'     => 'required|date|unique:event,date|max:10'
         ];
     }
 }

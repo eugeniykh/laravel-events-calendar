@@ -8,7 +8,6 @@
 require('./bootstrap');
 
 import BootstrapDatepicker from 'bootstrap-datepicker'
-import moment from 'moment'
 import Fullcalendar from 'fullcalendar'
 
 window.Vue = require('vue');
@@ -33,7 +32,6 @@ Vue.directive('datepicker', {
 
 Vue.directive('calendar', {
     components: {
-        moment,
         Fullcalendar
     },
     inserted: function (el) {

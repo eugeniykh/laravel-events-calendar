@@ -27576,10 +27576,8 @@ module.exports = __webpack_require__(163);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_datepicker__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_datepicker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_datepicker__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_fullcalendar__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_fullcalendar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_fullcalendar__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_fullcalendar__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -27588,7 +27586,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  */
 
 __webpack_require__(133);
-
 
 
 
@@ -27615,8 +27612,7 @@ Vue.directive('datepicker', {
 
 Vue.directive('calendar', {
     components: {
-        moment: __WEBPACK_IMPORTED_MODULE_1_moment___default.a,
-        Fullcalendar: __WEBPACK_IMPORTED_MODULE_2_fullcalendar___default.a
+        Fullcalendar: __WEBPACK_IMPORTED_MODULE_1_fullcalendar___default.a
     },
     inserted: function inserted(el) {
         Vue.http.get('/events').then(function (response) {

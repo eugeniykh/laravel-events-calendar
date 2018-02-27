@@ -22,9 +22,6 @@ window.VueResource = require('vue-resource');
  */
 
 Vue.directive('datepicker', {
-    components: {
-        BootstrapDatepicker
-    },
     inserted: (el) => {
         $(el).datepicker({
             format: 'yyyy-mm-dd'
@@ -33,9 +30,6 @@ Vue.directive('datepicker', {
 });
 
 Vue.directive('calendar', {
-    components: {
-        Fullcalendar
-    },
     inserted: function (el) {
         Vue.http.get('/events').then((response) => {
             let events = response.body;
